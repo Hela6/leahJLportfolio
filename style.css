@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+
+ 
+html, body {
+    font-family: 'Bungee Hairline', cursive;
+   width: 100%;
+   background-color: #161818; 
+   background-image: url(/img/forest3.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   margin: 0 auto;
+   color:aliceblue;
+}
+
+html {
+    scroll-padding-top: 100px; /* height of your sticky header */
+  }
+
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav, section {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+/* nav_________________________________________________________*/
+nav {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #161818; 
+    height: 100px;
+    box-shadow: 0px 0px 10px 10px rgb(50, 51, 51);
+}
+
+.hamburger {
+    display: none;
+}
+
+.navlinks_container {
+    display: flex;
+    flex-direction: row;
+}
+ 
+.navlinks_container a {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    margin: auto 2vw;
+}
+
+.navlinks_container a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #749ba1;
+    transition: transform 0.3s ease-out;
+}
+
+.navlinks_container a:hover::after {
+    transform: scaleX(1);
+}
+
+/*social media_________________________________________________________*/
+.social {
+    padding-top: 10px;
+}
+
+.logo_container {
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px 15px 10px 10px;
+}
+
+.logo_container:hover {
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px 15px 10px 10px;
+    box-shadow: 0px 0px 15px 1px aliceblue;
+}
+
+.logo {
+    width: auto;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* main page________________________________________________________________*/
+main, section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 6em;
+    margin: 0 auto;
+}
+
+p {
+    margin-top: 0;
+}
+
+.moon_container {
+    width: 200px;
+ }
+
+.moon {
+    width: 100%;
+ }
+
+h2:hover, a:hover {
+    cursor: pointer;
+    color: rgb(110, 187, 223);
+} 
+
+/* responsive for smaller screens________________________________________________________________________*/
+@media screen and (max-width: 1268px) {
+    .navlinks_container a {
+        justify-content: space-between;
+    }
+    
+    main, section {
+        width: 90%;
+        margin: 0 auto;
+    }  
+
+    h1 {
+        font-size: 5em;
+    }
+
+    .moon_container {
+        width: 175px;
+     }
+  }
+
+/* responsive for tablets________________________________________________________________________________*/
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+  }
+
+  /* responsive for smartphones__________________________________________________________________________ */
+@media screen and (max-width: 668px) {
+    nav {
+        padding: 15px;
+        height: 70px; 
+        justify-content: space-between;
+    }
+
+    html {
+        scroll-padding-top: 70px; /* height of your sticky header */
+    }
+
+    .moon_container {
+        width: 150px;
+     }
+
+/* burger menu ________________________________________*/
+    .hamburger {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border: none;
+        display: flex;
+        background: #161818;
+        align-items: center;
+        position: relative;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 80%;
+        height: 2px;
+        background: rgb(240, 242, 243);
+        border-radius: 10px;
+        position: absolute;
+        pointer-events: none;
+        transition: opacity 0.3s 0.15s ease-out;
+    }
+
+    .hamburger span:nth-child(1) {
+        transform: translateY(7px);
+    }
+
+    .hamburger span:nth-child(3) {
+        transform: translateY(-7px);
+    }
+
+    .hamburger span:nth-child(1),
+    .hamburger span:nth-child(3) {
+        transition: transform 0.3s ease-out;
+    }
+
+    .hamburger.open span:nth-child(1) {
+        transform: translate(0) rotate(135deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+        opacity: 0;
+        transition: opacity 0s ease-out;
+    }
+
+    .hamburger.open span:nth-child(3) {
+        transform: translate(0) rotate(-135deg);
+    }
+
+    .navlinks_container {
+        flex-direction: column;
+        background: #161818;
+        justify-content: first baseline;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        border-right: 1px solid rgba(50, 51, 51, 0);
+        transform: translateX(-100%);
+        transition: transform 0.4s ease-out;
+    }
+
+    .navlinks_container.open {
+        transform: translateX(0%);
+    }
+    
+    .navlinks_container a {
+        justify-content: space-around;
+        margin: 30px;
+        font-size: 0.8em;
+    }
+
+    .navlinks_container a:hover::after {
+        transform: scaleX(0);
+    }
+
+    button {
+        margin: 15px auto;
+    }
+
+}
+
+
+
