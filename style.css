@@ -2,7 +2,7 @@
 
  
 html, body {
-    font-family: 'Bungee Hairline', cursive;
+   font-family: 'Bungee Hairline', cursive;
    width: 100%;
    background-color: #161818; 
    background-image: url('./img/forest.png');
@@ -128,7 +128,7 @@ a {
 
 h1 {
     font-size: 4em;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 h2:hover, a:hover {
@@ -153,6 +153,19 @@ p {
     width: 100%;
  }
 
+ /* responsive for bg img________________________________________________________________________________*/
+@media screen and (max-width: 1775px) {
+    html, body {
+        background-image: url('./img/forest_smaller.png');
+     }
+
+     .moon_container {
+        width: 180px;
+        margin-top: 25px;
+     }
+  }
+
+
 /* responsive for smaller screens________________________________________________________________________*/
 @media screen and (max-width: 1268px) {
     .navlinks_container a {
@@ -161,7 +174,6 @@ p {
 
     h1 {
         font-size: 3em;
-        margin: 30px auto;
     }
     
     p {
