@@ -1,11 +1,12 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap'); */
-@font-face {
-    font-family: 'Bungee Hairline';
-    src: url('BungeeHairline-Regular.ttf');
-}
- 
+
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
+
 html, body {
-   font-family: 'Bungee Hairline', cursive;
+   font-family: 'Lekton', sans-serif;
+   /* font-family: 'Monda', sans-serif; */
+   /* font-family: 'Jura', sans-serif; */
    width: 100%;
    background-color: #161818; 
    background-image: url('./img/forest.png');
@@ -141,11 +142,12 @@ h2:hover, a:hover {
 
 h3 {
     margin-bottom: 0;
-    /* font-weight: bold; */
+    
 }
 
 p {
     margin: 0 auto 30px;
+    font-weight: 2em;
 }
 
 .moon_container {
