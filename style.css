@@ -194,20 +194,26 @@ p {
 
   /* responsive for smartphones__________________________________________________________________________ */
 @media screen and (max-width: 668px) {
+    html, body {
+        overflow: hidden;
+    }
+
+    html {
+        scroll-padding-top: 70px; /* height of your sticky header */
+    }
     nav {
         padding: 15px;
         height: 70px; 
         justify-content: space-between;
     }
 
-    html {
-        scroll-padding-top: 70px; /* height of your sticky header */
+    p {
+    margin: 0 auto 20px;
+    font-weight: 2em; 
+    width: 85%;
+    
     }
     
-    .moon_container {
-        width: 150px;
-     }
-
 /* burger menu ________________________________________*/
     .hamburger {
         width: 30px;
