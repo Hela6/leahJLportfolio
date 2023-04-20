@@ -148,12 +148,6 @@ p {
     width: 100%;
  }
 
- /* responsive for bg img________________________________________________________________________________*/
-@media screen and (max-width: 1775px) {
-
-  }
-
-
 /* responsive for smaller screens________________________________________________________________________*/
 @media screen and (max-width: 1268px) {
     .navlinks_container a {
