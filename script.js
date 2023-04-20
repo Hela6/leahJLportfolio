@@ -7,3 +7,4 @@ function toggleNav() {
 
     navLinksContainer.classList.toggle("open");
 }
+

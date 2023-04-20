@@ -7,8 +7,7 @@ html, body {
    font-family: 'Lekton', sans-serif;
    /* font-family: 'Monda', sans-serif; */
    /* font-family: 'Jura', sans-serif; */
-   width: 100%;
-   background-color: #161818; 
+   width: 100%; 
    background-image: url('./img/bg.jpg');
    background-size: cover;
    background-repeat: no-repeat;
@@ -33,7 +32,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #19191900;
+    background-color: #191919;
     height: 100px;
 }
 
@@ -148,6 +147,24 @@ p {
     width: 100%;
  }
 
+
+ footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+ }
+
+ a.switch_language {
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 50px;
+   margin: 15px;
+ }
+
 /* responsive for smaller screens________________________________________________________________________*/
 @media screen and (max-width: 1268px) {
     .navlinks_container a {
@@ -174,9 +191,9 @@ p {
 
   /* responsive for smartphones__________________________________________________________________________ */
 @media screen and (max-width: 668px) {
-    html, body {
+    /* html, body {
         overflow: hidden;
-    }
+    } */
 
     nav {
         padding: 15px;
