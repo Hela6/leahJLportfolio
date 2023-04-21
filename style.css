@@ -32,7 +32,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #191919;
+    background-color: #1d1d1d;
     height: 100px;
 }
 
@@ -147,23 +147,12 @@ p {
     width: 100%;
  }
 
-
- footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: fixed;
-    bottom: 0;
-    right: 0;
- }
-
- a.switch_language {
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 30px;
-    width: 50px;
-   margin: 15px;
- }
+ .images {
+    max-width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px auto 100px auto;
+}
 
 /* responsive for smaller screens________________________________________________________________________*/
 @media screen and (max-width: 1268px) {
@@ -205,6 +194,10 @@ p {
     margin: 0 auto 20px;
     font-weight: 2em; 
     width: 85%;
+    }
+
+    .images {
+        max-width: 50%;
     }
     
 /* burger menu ________________________________________*/
