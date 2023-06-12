@@ -138,8 +138,8 @@ h3 {
 p {
     margin: 0 auto 30px;
     font-weight: 2em; 
-    width: 30%;
-    /* text-align: left; */
+    width: 35%;
+    text-align: center;
 }
 
 .cv {
@@ -151,7 +151,7 @@ p {
 
 .cv:hover {
     background-color: #64a8a8;
-    color : aliceblue;
+    color : rgb(29, 31, 34);
 }
 
 .project_desc {
