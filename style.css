@@ -194,6 +194,7 @@ p {
 
     .project_desc {
         width : 80%;
+        text-align: center;
     }
 
     .moon_container {
@@ -229,8 +230,6 @@ p {
     font-weight: 2em; 
     width: 85%;
     }
-
-    
 
     .images {
         max-width: 50%;
