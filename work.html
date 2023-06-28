@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.css" />
     <script src="script.js" defer></script>
-    <title>Leah's-portfolio-projets</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <title>Leah-portfolio-projets</title>
 </head>
 
 <body>
@@ -27,7 +30,7 @@
                 <a href="work.html" onclick="toggleNav()" class="anchor" class="navlinks">
                     <h2>PROJETS</h2>
                 </a>
-                <a href="art.html" target="_blank" onclick="toggleNav()" class="anchor" class="navlinks">
+                <a href="art.html" onclick="toggleNav()" class="anchor" class="navlinks">
                     <h2>ART</h2>
                 </a>
 
@@ -48,37 +51,76 @@
 
     <section>
         <h1>Mes projets</h1>
-        <div class="projects">
-            <h3><a href="https://hela6.github.io/game-platform/" target="_blank">Mini Games Plateform</a></h3>
-            <p class="project_desc">site plateforme avec des mini-jeux que j'ai codé pour travailler sur la logique en
-                Javascript</p>
+
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><a href="https://minimalist-mind-clearer.netlify.app/" target="_blank">
+                        <div class="project_title">
+                            <h3>Minimalist Mind Clearer&nbsp;</h3>
+                            <span class="desc">&nbsp;Un mémo pour libérer son esprit</span>
+                        </div>
+                        <span> React JS - CSS</span>
+                        <span><em>projet individuel</em></span>
+                        <img src="./img/MMC.png" alt="">
+                    </a></div>
+
+                <div class="swiper-slide"><a href="https://elrecipiente.github.io/The-Watches-Project/" target="_blank">
+                        <div class="project_title">
+                            <h3>Watches&nbsp;</h3>
+                            <span class="desc">&nbsp;Un site e-commerce de montres</span>
+                        </div>
+                        <span>CSS - JS natif</span>
+                        <span><em>projet collaboratif</em></span>
+                        <img src="./img/Watches.png" alt="">
+                    </a></div>
+
+                <div class="swiper-slide">
+                    <a href="https://hela6.github.io/weather-app/" target="_blank">
+                        <div class="project_title">
+                            <h3>Weather App&nbsp;</h3>
+                            <span class="desc">&nbsp;Une application météo minimaliste pour smartphone</span>
+                        </div>
+                        <span>SASS - JS natif - Open Weather API</span>
+                        <span><em>projet collaboratif</em></span>
+                        <img src="./img/WA.png" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide"> <a href="https://hela6.github.io/game-platform/" target="_blank">
+                        <div class="project_title">
+                            <h3>Game Plateform&nbsp;</h3>
+                            <span class="desc">&nbsp;Une plateforme de mini-jeux (que j'ai codé aussi!)</span>
+                        </div>
+                        <span> HTML - CSS - JS natif</span>
+                        <span><em>projet individuel</em></span>
+                        <div><img src="./img/MGP.png" alt=""></div>
+                    </a></div>
+
+                <div class="swiper-slide"><a href="https://lynx1414.github.io/the_devils_devs/index.html"
+                        target="_blank">
+                        <div class="project_title">
+                            <h3>The Devil's Devs&nbsp;</h3>
+                            <span class="desc">&nbsp;Un site web pour un groupe de rock psyche</span>
+                        </div>
+                        <span> HTML - CSS</span>
+                        <span><em>projet collaboratif</em></span>
+                    </a>
+                    <img src="./img/TDD.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="projects">
-            <h3><a href="https://hela6.github.io/weather-app/" target="_blank">Weather App</a></h3>
-            <p class="project_desc">application météo pour mobile en JS et Sass avec l'API Open Weather, codée avec une
-                amie</p>
+        <div class="controls">
+            <div><img src="./logo/previous.png" class="prev logo"></div>
+            <div class="swiper-pagination"></div>
+            <div><img src="./logo/next.png" class="next logo"></div>
         </div>
 
-        <div class="projects">
-            <h3><a href="https://minimalist-mind-clearer.netlify.app/" target="_blank">Minimalist Mind Clearer</a></h3>
-            <p class="project_desc">application mémo minimaliste en React JS</p>
-        </div>
-
-        <div class="projects">
-            <h3><a href="https://elrecipiente.github.io/The-Watches-Project/" target="_blank">Watches</a></h3>
-            <p class="project_desc">site vitrine de vente de montres, codé avec deux personnes de ma promotion pour
-                travailler sur la
-                manipulation du DOM en JS</p>
-        </div>
-
-        <div class="projects">
-            <h3><a href="https://lynx1414.github.io/the_devils_devs/index.html" target="_blank">The Devil's Devs</a>
-            </h3>
-            <p class="project_desc">site pour un groupe de rock psyche en collaboration avec une collègue pour
-                s'entrainer à l'utilisation de
-                GitHub</p>
-        </div>
     </section>
 
 

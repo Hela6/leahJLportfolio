@@ -1,13 +1,7 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
 
 html, body {
    font-family: 'Nunito', sans-serif;
-   /* font-family: 'Monda', sans-serif; */
-   /* font-family: 'Jura', sans-serif; */
    width: 100%; 
    background-image: url('./img/bg.jpg');
    background-size: cover;
@@ -132,30 +126,93 @@ h2:hover, a:hover {
 
 h3 {
     margin-bottom: 0;
+    color: aliceblue;
+    margin: 15px auto;
+}
+
+h3, span {
+    display: flex;
+    justify-content: center;
+}
+
+span {
     color: #93B4B4;
+    margin-bottom: 20px;
 }
 
 p {
-    margin: 0 auto 30px;
-    font-weight: 2em; 
+    margin: 0 auto 10px;
+    font-size: 1.25em; 
     width: 35%;
-    text-align: center;
+}
+
+em {
+    font-weight: normal;
+}
+
+.about_me_text {
+    text-align: left;
+    line-height: 1.5em;
 }
 
 .cv {
     border-radius: 20px;
     padding: 8px 12px;
-    background-color: aliceblue;
-    color: #3a6d6d;
+    background-color: #64a8a8;
+    color : rgb(29, 31, 34);
+    margin-bottom: 15px;
 } 
 
 .cv:hover {
-    background-color: #64a8a8;
-    color : rgb(29, 31, 34);
+    background-color: aliceblue;
+    color: #3a6d6d;
 }
 
 .project_desc {
     width : 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.desc {
+    font-weight: lighter;
+    color: aliceblue;
+}
+
+.swiper {
+    width: 750px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+  }
+  
+.swiper-slide {
+    width: 100%;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 10%;
+    margin-top: 30px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+   position: unset;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #3a6d6d;
 }
 
 .moon_container {
@@ -195,6 +252,32 @@ p {
     .project_desc {
         width : 80%;
         text-align: center;
+        flex-direction: column;
+    }
+
+    .project_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .swiper {
+        width: 600px;
+        height: 500px;
+      }
+      
+    .swiper-slide {
+        width: 100%;
+    }
+    
+    .swiper-slide img {
+        width: 100%; 
+        height: auto; 
+      }
+    
+    .controls {
+        width: 30%;
     }
 
     .moon_container {
@@ -202,7 +285,7 @@ p {
         display: none;
      }
   }
-
+  
 /* responsive for tablets________________________________________________________________________________*/
 @media screen and (max-width: 768px) {
     h1 {
@@ -210,15 +293,14 @@ p {
         margin: 30px auto;
     }
 
-    
+      .swiper {
+        width: 500px;
+        height: 450px;
+      } 
   }
 
   /* responsive for smartphones__________________________________________________________________________ */
-@media screen and (max-width: 668px) {
-    /* html, body {
-        overflow: hidden;
-    } */
-
+@media screen and (max-width: 568px) {
     nav {
         padding: 15px;
         height: 70px; 
@@ -226,9 +308,24 @@ p {
     }
 
     p {
-    margin: 0 auto 20px;
-    font-weight: 2em; 
+    margin: 0 15px 20px 15px;
+    font-size: 1em; 
     width: 85%;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .swiper {
+        width: 310px;
+        height: auto;
+        align-items: center;
+    }
+
+    .controls {
+        width: 50%;
+        margin-top: 0px;
     }
 
     .images {
@@ -316,7 +413,6 @@ p {
     button {
         margin: 15px auto;
     }
-
 }
 
 
