@@ -284,6 +284,11 @@ em {
         width: 130px;
         display: none;
      }
+
+     
+    .images {
+        max-width: 30%;
+    }
   }
   
 /* responsive for tablets________________________________________________________________________________*/
@@ -297,6 +302,10 @@ em {
         width: 500px;
         height: 450px;
       } 
+
+      .images {
+        max-width: 40%;
+    }
   }
 
   /* responsive for smartphones__________________________________________________________________________ */
