@@ -114,9 +114,15 @@ a {
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 2em;
     margin: 30px auto;
     color: #93B4B4;
+    width: 30%;
+    text-align: center;
+}
+
+.about_me_title {
+    text-align: left;
 }
 
 h2:hover, a:hover {
@@ -143,7 +149,7 @@ span {
 p {
     margin: 0 auto 10px;
     font-size: 1.25em; 
-    width: 35%;
+    width: 30%;
 }
 
 em {
@@ -238,7 +244,7 @@ em {
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 2em;
     }
     
     h2 {
