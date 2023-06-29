@@ -245,6 +245,7 @@ em {
 
     h1 {
         font-size: 2em;
+        width: 60%;
     }
     
     h2 {
@@ -320,6 +321,11 @@ em {
         padding: 15px;
         height: 70px; 
         justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 1.25em;
+        width: 85%;
     }
 
     p {
