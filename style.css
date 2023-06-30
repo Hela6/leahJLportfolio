@@ -238,6 +238,13 @@ em {
 }
 
 /* responsive for smaller screens________________________________________________________________________*/
+@media screen and (max-width: 1468px) {
+    h1, p {
+        width: 40%;
+    }
+    }
+
+/* responsive for smaller screens________________________________________________________________________*/
 @media screen and (max-width: 1268px) {
     .navlinks_container a {
         justify-content: space-between;
@@ -292,7 +299,6 @@ em {
         display: none;
      }
 
-     
     .images {
         max-width: 30%;
     }
