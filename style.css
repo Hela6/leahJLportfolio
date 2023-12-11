@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 html,
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Red Hat Mono', monospace;
   width: 100%;
-  background-image: url("./img/bg.jpg");
+  background-image: url("./img/rocks1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -29,7 +29,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #1d1d1d;
+  background-color: #1d1d1d00;
   height: 100px;
 }
 
@@ -102,13 +102,19 @@ nav {
 }
 
 /* main page________________________________________________________________*/
-main,
 section,
 .projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10em;
 }
 
 a {
@@ -244,6 +250,7 @@ em {
 
 /* responsive for smaller screens________________________________________________________________________*/
 @media screen and (max-width: 1468px) {
+
   h1,
   p {
     width: 50%;
@@ -252,13 +259,20 @@ em {
 
 /* responsive for smaller screens________________________________________________________________________*/
 @media screen and (max-width: 1268px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+  }
+
   .navlinks_container a {
     justify-content: space-between;
   }
 
   h1 {
     font-size: 2em;
-    width: 60%;
+    width: 80%;
   }
 
   h2 {
@@ -266,7 +280,7 @@ em {
   }
 
   p {
-    width: 60%;
+    width: 80%;
   }
 
   .project_desc {
