@@ -127,7 +127,7 @@ h1 {
   font-size: 2em;
   margin: 30px auto;
   color: #93b4b4;
-  width: 40%;
+  width: 50%;
   text-align: center;
 }
 
@@ -160,7 +160,7 @@ span {
 p {
   margin: 0 auto 10px;
   font-size: 1.25em;
-  width: 40%;
+  width: 50%;
 }
 
 em {
@@ -263,7 +263,6 @@ em {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
   .navlinks_container a {
@@ -327,8 +326,14 @@ em {
 /* responsive for tablets________________________________________________________________________________*/
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 30px auto;
+  }
+
+  p {
+    margin: 0 15px 20px 15px;
+    font-size: 1em;
+    width: 75%;
   }
 
   .swiper {
@@ -342,7 +347,7 @@ em {
 }
 
 /* responsive for smartphones__________________________________________________________________________ */
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 668px) {
   nav {
     padding: 15px;
     height: 70px;
@@ -356,7 +361,6 @@ em {
 
   p {
     margin: 0 15px 20px 15px;
-    font-size: 1em;
     width: 85%;
   }
 
