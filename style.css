@@ -114,7 +114,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10em;
+  margin-top: 5em;
 }
 
 a {
@@ -263,7 +263,7 @@ em {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5em;
+
   }
 
   .navlinks_container a {
